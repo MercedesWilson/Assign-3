@@ -19,11 +19,27 @@
         text-align: center;
         font-size: 50px;
       }
-    
-      img {
+      
+       /* Flexbox container for the images */
+      .images-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
         padding: 20px;
-        height: 300px
       }
+      
+        /* Style for the Connect Card image */
+      .images-container img.connect-card {
+        height: 300px; 
+        padding: 10px;
+      }
+
+      /* Style for the Connect Social image */
+      .images-container img.connect-social {
+        height: 100px; 
+        padding-top: 70px;
+      }
+      
       /* Flexbox container for the logo and navbar */
       .header {
         font-family: "Lora", sans-serif;
@@ -63,6 +79,49 @@
         background-color: white;
         border-radius: 5px;
       }
+      
+      /* Mobile-first adjustments */
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 24px; /* Reduce font size on mobile */
+        }
+
+        /* Stack the images vertically on small screens */
+        .images-container {
+          flex-direction: column;
+        }
+
+        /* Resize images on smaller screens */
+        .images-container img.connect-card {
+          height: 250px;
+        }
+
+        .images-container img.connect-social {
+          height: 150px;
+        }
+
+        /* Adjust navbar for mobile */
+        .nav-bar {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .nav-bar li {
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+      /* Desktop view (larger screens) */
+      @media screen and (min-width: 769px) {
+        h1 {
+          font-size: 50px; /* Larger font size for desktop */
+        }
+
+        .images-container {
+          flex-direction: row; /* Keep images side by side on desktop */
+        }
+      }
     </style>
   </head>
   <body>
@@ -81,7 +140,9 @@
     <h1>
        “You have to be uncomfortable in order to become comfortable”
     </h1>
-    <img src="Connect_Card.png" alt="connect card">
-    <img src="Connect.png" alt="Connect on socials">
+   <div class="images-container">
+    <img src="Connect_Card.png" alt="Connect card" class="connect-card">
+    <img src="Connect_Social.png" alt="Connect on socials" class="connect-social">
+    </div>
   </body>
 </html>
