@@ -4,14 +4,20 @@
     <title>Personal Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-sale=1.0, width=device-width">
-   <link href="https://fonts.googleapis.com/css2?family=Alice&family=Fredoka:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <style>
       body {
         background-color: #e5dfd4;
+        margin: 0;
       }
 
       h1 {
-        font-family: "Playfair Display", sans-serif; 
+        font-family: "Playfair Display", serif; 
         border-color: white;
         border-width: 3px;
         border-style: solid;
@@ -20,9 +26,22 @@
         font-size: 50px;
       }
       
+      h2 {
+        font-family: "Playfair Display", serif;
+        padding-left: 30px;
+      }
+      
+      p {
+        font-family: Alice;
+        margin: 40px;
+        padding-right: 325px;
+      }
+      
        /* Flexbox container for the connect images */
       .images-container {
         display: inline-flex;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
         padding: 20px;
       }
@@ -45,7 +64,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between; 
-        padding: 10px 20px;
+        
+        /* Sticky positioning */
+        position: sticky;
+        top: 0;
+        background-color: #bec8b6;    
       }
 
       /* Style for the logo */
@@ -56,8 +79,6 @@
       /* Style for the nav bar */
       .nav-bar {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
         display: flex; 
       }
 
@@ -79,10 +100,10 @@
         border-radius: 5px;
       }
       
-      /* Mobile-first adjustments */
+      /* Mobile Screen */
       @media screen and (max-width: 768px) {
         h1 {
-          font-size: 24px; /* Reduce font size on mobile */
+          font-size: 24px; 
         }
 
         /* Stack the images vertically on small screens */
@@ -111,14 +132,14 @@
         }
       }
 
-      /* Desktop view (larger screens) */
+      /* Desktop Screen */
       @media screen and (min-width: 769px) {
         h1 {
-          font-size: 50px; /* Larger font size for desktop */
+          font-size: 50px; 
         }
 
         .images-container {
-          flex-direction: row; /* Keep images side by side on desktop */
+          flex-direction: row; 
         }
       }
     </style>
@@ -136,7 +157,7 @@
         <li><a href="#connect">Connect</a></li>
       </ul>
     </div>
-    <h1>
+    <h1 id="connect">
        “You have to be uncomfortable in order to become comfortable”
     </h1>
    <div class="images-container">
@@ -145,8 +166,10 @@
     </div>
     
      <section id="about me">
-    <h2>About Me</h2>
-    <p>Your about me content here.</p>
+    <h2>My Story!</h2>
+    <p>Hi! I’m Mercedes and am currently studying Global Business and Digital Arts at the University of Waterloo. During my childhood I grew up as a missionary kid in Guatemala which has shaped me into who I am today. My family and I worked at an orphanage called ‘James Project of Latin America’ in which we lead several teams from North America to serve the kids that lived on site. As a kid I always had a mindset that if I was uncomfortable it means I was pushing myself and making myself a better person, so I began living by a motto “You have to be uncomfortable in order to become comfortable”. In doing so, this unique experience has taught me leadership, translation, and missional work. </p>
+      <p>Living cross-culturally sparked my passion for helping those in need and has inspired me to study in a field in business in the hopes of launching a nonprofit that builds supportive communities around the world. I would love to create a space for children and mothers that offers family, friendship, and connection to those who need it most.</p>
+       <p>Upon moving back to Canada in 2019, it has become of particular interest to create art with the hopes of selling it one day at art galleries so I can share my story globally to spread awareness about the vulnerability that is just below North America.</p>
   </section>
     
     <section id="portfolio">
