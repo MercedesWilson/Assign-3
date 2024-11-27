@@ -39,8 +39,6 @@
       
       p {
         font-family: "Alice", serif;
-        margin: 40px;
-        padding-right: 325px;
       }
       
        /* Flexbox container for the connect images */
@@ -106,6 +104,29 @@
         border-radius: 5px;
       }
       
+      /* Flex container for About Me section */
+      .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 10;
+      }    
+
+    /* Style for the image */
+    .about-image {
+      height: 550px;
+      width: auto;
+      border-radius: 10px;
+    }
+
+    /* Style for the text */
+    .about-text {
+      padding-left: 10;
+      width: 100%;
+      max-width: 800px;
+      font-family: "Alice", serif;
+    }
+      
       /* Mobile Screen */
       @media screen and (max-width: 768px) {
         h1 {
@@ -163,6 +184,7 @@
         <li><a href="#connect">Connect</a></li>
       </ul>
     </div>
+    
     <h1 id="connect">
        “You have to be uncomfortable in order to become comfortable”
     </h1>
@@ -172,12 +194,17 @@
     </div>
     
      <section id="about me">
-    <h2>About Me!</h2>
+       <h2>About Me!</h2>
+       <div class="about-container">
+         <img src="About_Me.jpg" alt="Mercedes Wilson" class="about-image">
+    <div class="about-text">
       <p>Hi! I’m Mercedes and am currently studying Global Business and Digital Arts at the University of Waterloo. During my childhood I grew up as a missionary kid in Guatemala which has shaped me into who I am today. My family and I worked at an orphanage called ‘James Project of Latin America’ in which we lead several teams from North America to serve the kids that lived on site. As a kid I always had a mindset that if I was uncomfortable it means I was pushing myself and making myself a better person, so I began living by a motto “You have to be uncomfortable in order to become comfortable”. In doing so, this unique experience has taught me leadership, translation, and missional work. </p>
        
       <p>Living cross-culturally sparked my passion for helping those in need and has inspired me to study in a field in business in the hopes of launching a nonprofit that builds supportive communities around the world. I would love to create a space for children and mothers that offers family, friendship, and connection to those who need it most.</p>
        
       <p>Upon moving back to Canada in 2019, it has become of particular interest to create art with the hopes of selling it one day at art galleries so I can share my story globally to spread awareness about the vulnerability that is just below North America.</p>
+      </div>
+         </div>
   </section>
     
     <section id="portfolio">
