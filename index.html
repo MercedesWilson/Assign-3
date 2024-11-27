@@ -38,11 +38,6 @@
         margin-left: 30px;
       }
       
-      h4 {
-        font-family: "Alice", serif;
-        font-size: 20px;
-      }
-      
       p {
         font-family: "Alice", serif;
         font-size: 17px;
@@ -134,49 +129,13 @@
       max-width: 800px;
       font-family: "Alice", serif;
     }
-      
-      /* Mobile Screen */
-      @media screen and (max-width: 768px) {
-        h1 {
-          font-size: 24px; 
-        }
-
-        /* Stack the images vertically on small screens */
-        .images-container {
-          flex-direction: column;
-        }
-
-        /* Resize images on smaller screens */
-        .images-container img.connect-card {
-          height: 250px;
-        }
-
-        .images-container img.connect-social {
-          height: 150px;
-        }
-
-        /* Adjust navbar for mobile */
-        .nav-bar {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .nav-bar li {
-          margin-left: 0;
-          margin-bottom: 10px;
-        }
-      }
-
-      /* Desktop Screen */
-      @media screen and (min-width: 769px) {
-        h1 {
-          font-size: 50px; 
-        }
-
-        .images-container {
-          flex-direction: row; 
-        }
-      }
+    
+    .centered-resume {
+      text-align: center;
+      font-family: "Alice", serif;
+      font-size: 20;
+      margin-top: 40px; 
+    }
     </style>
   </head>
   <body>
@@ -256,15 +215,15 @@
       <h3>My Skills &amp Certifications</h3>
       
       <ul style="font-family: Alice, serif">
-        <li>Leadership - Skilled in guiding teams and projects to success through effective collaboration and clear communication</li><br>
-        <li>Bilingual – Fluent in English and Spanish, with extensive experience in translation.</li><br>
-        <li>Project Management – Proficient in planning, executing, and overseeing projects from concept to completion.</li><br>
-        <li>Time Management – Able to balance multiple tasks and responsibilities effectively.</li><br>
-        <li>Smart Serve Certified – Trained and certified to serve responsibly in hospitality environments.</li><br>
-        <li>First Aid Certified – Knowledgeable in basic life support and emergency response.</li>
+        <li><strong>Leadership</strong>- Skilled in guiding teams and projects to success through effective collaboration and clear communication</li><br>
+        <li><strong>Bilingual</strong>– Fluent in English and Spanish, with extensive experience in translation.</li><br>
+        <li><strong>Project Management</strong>– Proficient in planning, executing, and overseeing projects from concept to completion.</li><br>
+        <li><strong>Time Management</strong>– Able to balance multiple tasks and responsibilities effectively.</li><br>
+        <li><strong>Smart Serve Certified</strong>– Trained and certified to serve responsibly in hospitality environments.</li><br>
+        <li><strong>First Aid Certified</strong>– Knowledgeable in basic life support and emergency response.</li>
       </ul>
       
-      <h4>Click here to see my resume</h4>
+      <h4 class="centered-resume">Click <a href="resume.pdf" target="Mercedes' Resume" style="color: white; text-decoration: underline;">here</a> for resume</h4>
   </section>
   </body>
 </html>
