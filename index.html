@@ -53,38 +53,6 @@
         padding-top: 0;
       }
       
-       /* Flexbox container for the connect images */
-      .images-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 60px;
-        padding: 20px;
-      }
-      
-        /* Style for the Instagram Icon */
-      .images-container img.Insta {
-        height: 50px; 
-      }
-
-      /* Style for the LinkedIn Icon */
-      .images-container img.LinkedIn {
-        height: 50px; 
-      }
-      
-       /* Style for the Mail Icon */
-      .images-container img.Mail {
-        height: 50px
-      }
-      
-      .images-container a img {
-        transition: transform 0.3s ease, opacity 0.3s ease;
-      }
-      .images-container a img:hover {
-        transform: scale(1.1); 
-        opacity: 0.8; 
-      }
-      
       /* Flexbox container for the logo and navbar */
       .header {
         font-family: "Lora", sans-serif;
@@ -127,8 +95,40 @@
         border-radius: 5px;
       }
       
+       /* Flexbox container for the connect images */
+      .images-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 20px;
+      }
+      
+        /* Style for the Instagram Icon */
+      .images-container img.Insta {
+        height: 50px; 
+      }
+
+      /* Style for the LinkedIn Icon */
+      .images-container img.LinkedIn {
+        height: 50px; 
+      }
+      
+       /* Style for the Mail Icon */
+      .images-container img.Mail {
+        height: 50px
+      }
+      
+      .images-container a img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .images-container a img:hover {
+        transform: scale(1.1); 
+        opacity: 0.8; 
+      }
+      
       /* Flex container for About Me section */
-      .about-container {
+    .about-container {
       display: flex;
       margin-left: 5;
       align-items: center;
@@ -149,19 +149,19 @@
       font-family: "Alice", serif;
     }
     
+    .full-width-portfolio {
+      width: 95%;
+      height: auto;
+      display: block; 
+      margin: 20px;
+    }
+      
     .centered-resume {
       text-align: center;
       font-family: "Alice", serif;
       font-size: 20;
       margin-top: 40px; 
-    }
-      
-    .full-width-portfolio {
-      width: 100%;
-      height: auto;
-      display: block; 
-      margin: 20px;
-    }
+     }
     
     .full-width-bottom {
       width: 100%;
@@ -177,10 +177,12 @@
     </style>
   </head>
   
-  <body>
+  <body id="top">
     <div class="header">
       <!-- Logo -->
+      <a href="#top">
       <img src="Perosnal-Logo.png" alt="Logo">
+        </a>
       
       <!-- Navigation Bar -->
       <ul class="nav-bar">
@@ -266,7 +268,7 @@
         <li><strong>First Aid Certified</strong>– Knowledgeable in basic life support and emergency response.</li>
       </ul>
       <!-- Link to Resume -->
-      <h4 class="centered-resume">Click <a href="resume.pdf" target="_blank" style="color: white; text-decoration: underline;">here</a> for resume</h4>
+      <h4 class="centered-resume">Click <a href="Resume.pdf" target="_blank" style="color: white; text-decoration: underline;">here</a> for resume</h4>
   </section>
     <!-- Bottom Bar -->
      <img src="Bottom.png" alt="Bottom Bar" class="full-width-bottom">
