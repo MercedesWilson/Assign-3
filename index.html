@@ -11,6 +11,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <style>
+       /* Styles for body, headers, and paragraph */
       body {
         background-color: #e5dfd4;
         margin: 0;
@@ -24,7 +25,7 @@
         color: #7d7b76;
         text-align: center;
         font-size: 50px;
-        margin: 50px;
+        margin: 80px;
       }
       
       h2 {
@@ -35,8 +36,14 @@
       
       h3 {
         font-family: "Lora", sans-serif;
-        font-size: 20;
+        font-size: 20px;
         margin-left: 30px;
+      }
+      
+      h4 {
+        font-family: "Alice", sans-serif;
+        font-size: 18px;
+        text-align: center;
       }
       
       p {
@@ -48,23 +55,34 @@
       
        /* Flexbox container for the connect images */
       .images-container {
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 60px;
         padding: 20px;
       }
       
-        /* Style for the Connect Card image */
-      .images-container img.connect-card {
-        height: 300px; 
-        padding: 10px;
+        /* Style for the Instagram Icon */
+      .images-container img.Insta {
+        height: 50px; 
       }
 
-      /* Style for the Connect Social image */
-      .images-container img.connect-social {
-        height: 100px; 
-        padding-top: 70px;
+      /* Style for the LinkedIn Icon */
+      .images-container img.LinkedIn {
+        height: 50px; 
+      }
+      
+       /* Style for the Mail Icon */
+      .images-container img.Mail {
+        height: 50px
+      }
+      
+      .images-container a img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .images-container a img:hover {
+        transform: scale(1.1); 
+        opacity: 0.8; 
       }
       
       /* Flexbox container for the logo and navbar */
@@ -142,17 +160,18 @@
       width: 100%;
       height: auto;
       display: block; 
-      margin: 0;
-      padding: 0; 
+      margin-left: 10px;
+      margin-right: 10px;
     }
       
       section {
         border-top: 4px solid #bec8b6;
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
     </style>
   </head>
+  
   <body>
     <div class="header">
       <!-- Logo -->
@@ -168,11 +187,15 @@
     </div>
     
     <!-- Quote and connect hyperlinks -->
-    <h1 id="connect">
-       “You have to be uncomfortable in order to become comfortable”
-    </h1>
+    <h1>“You have to be uncomfortable in order to become comfortable”</h1>
+    <h4 id="connect">Connect On Socials</h4>
    <div class="images-container">
-  
+     <a herf="https://www.instagram.com/mercwils/" target="_blank">
+     <img src="Instagram.png" alt="Instagram" class="Insta">
+       </a>
+     
+     <img src="LinkedIn.png" alt="Linkedin" class="LinkedIn">
+     <img src="Mail.png" alt="Mail" class="Mail">
     </div>
     
     <!-- About me section -->
@@ -235,7 +258,7 @@
         <li><strong>First Aid Certified</strong>– Knowledgeable in basic life support and emergency response.</li>
       </ul>
       <!-- Link to Resume -->
-      <h4 class="centered-resume">Click <a href="resume.pdf" target="Mercedes' Resume" style="color: white; text-decoration: underline;">here</a> for resume</h4>
+      <h4 class="centered-resume">Click <a href="resume.pdf" target="_blank" style="color: white; text-decoration: underline;">here</a> for resume</h4>
   </section>
     <!-- Bottom Bar -->
      <img src="Bottom.png" alt="Bottom Bar" class="full-width-image">
